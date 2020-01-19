@@ -21,7 +21,7 @@ const login = async (obj, { email, password }) => {
 
   // If successful login, set authentication information
   const payload = {
-    sub: user.id,
+    id: user.id,
   }
   const token = createToken(payload)
 
